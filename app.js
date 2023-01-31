@@ -9,7 +9,7 @@ import bookingsRouter from "./routes/booking-routes.js";
 
 dotenv.config();
 const app = express();
-
+mongoose.set('strictQuery',false)
 app.use(function(req, res, next) {
     res.header(
         "Access-Control-Allow-Headers",
